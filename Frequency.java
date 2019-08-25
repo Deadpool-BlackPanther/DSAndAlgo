@@ -9,15 +9,17 @@ Write your code in this editor and press "Run" button to execute it.
 public class Main
 {
     
-    
+     
 	public static void main(String[] args) {
-		String arr = "Hello";
+		String arr = "Hekko";
 		int val =0;
 		int numArr[] = new int[123];
 		
-		for(int i=0;i<length(arr);i++)
+		for(int i=0;i<arr.length();i++)
 		{
-		    numArr[arr[i]]+=1;
+		    int x=arr.charAt(i);
+		    System.out.print(x+" ");
+		    numArr[x]+=1;
 		}
 			int max=0;
 	    for(int i=65;i<123;i++)
@@ -29,6 +31,6 @@ public class Main
 	        }
 	    }
 	    char ch = (char)val;
-	    System.out.print("value"+ch);
+	    System.out.print("value "+ch);
 	}
 }
