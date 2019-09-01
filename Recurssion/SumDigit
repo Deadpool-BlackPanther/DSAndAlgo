@@ -1,0 +1,23 @@
+public class SumDigit {
+
+	static int Sum(int num)
+	{
+		if(num/10==num)
+		
+		{
+			return num;
+		}
+		
+		int digit=num%10;//Rememeber to find the last digit use '%' remainder
+		System.out.println(digit);
+	return Sum(num/10) + digit;	
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int ans = Sum(432);
+		//System.out.println(ans);
+		
+	}
+
+}
