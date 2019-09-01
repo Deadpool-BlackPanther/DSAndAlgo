@@ -1,0 +1,38 @@
+
+public class StringRev {
+
+	static String StringRevRecursion(String str) {
+		System.out.println(str);
+		//checking length==2 is required as the code will not work for even no. word as the satrt and end will overlap each other
+    if(str.length()==2)                 
+		{   if(str.charAt(0)==str.charAt(1))
+				return "palindrome";
+			else
+				return null;
+				
+		}
+		
+		if(str.length()==1)
+		{
+			return "Palindrome";
+		}
+		
+		if(str.charAt(0)!=str.charAt(str.length()-1))
+		{
+			return null; 
+		}
+		else
+			return StringRevRecursion(str.substring(1,str.length()-1)) ;
+			
+	} 
+	
+	public static void main(String [] args)
+	{
+		String rev = StringRevRecursion("abbba");
+		
+		
+		System.out.print(rev);
+		
+	}
+
+}
